@@ -1,0 +1,13 @@
+name: inspect
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check repo
+        run:
+      - name: kernal details
+        run:
+      - name: listing
+        run: 
+
