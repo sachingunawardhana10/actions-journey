@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check repo
-        run:
+        uses: actions/checkout@v4
       - name: kernal details
-        run:
+        run: |
+          uname -a
+          ls -la
       - name: listing
-        run: 
+        run: find . -type f | wc -l
 
