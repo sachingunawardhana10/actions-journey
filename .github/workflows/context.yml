@@ -1,7 +1,5 @@
 name: context
-
 on: push
-
 jobs:
   describe:
     runs-on: ubuntu-latest
