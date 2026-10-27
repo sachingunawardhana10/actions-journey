@@ -1,13 +1,13 @@
-name: Context
+name: context
 on: push
 jobs:
   describe:
     runs-on: ubuntu-latest
     steps:
-      - name: Describe the run
+      - name: Describe this run
         run: |
-          echo "Repo name: ${{github.repository}}"
-          echo "Branch: ${{github.ref}}"
-          echo "Commit_id: ${{github.sha}}"
-          echo "Eventname: ${{github.event_name}}"
-          echo "Runner OS: ${{runner.os}}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Event: ${{ github.event_name }}"
+          echo "Runner OS: ${{ runner.os }}"
